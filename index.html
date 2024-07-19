@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Game Reviews</title>
+  <meta name="description" content="Browse and review various games by category.">
+</head>
+
+<body class="bg-dark">
+
+  <header></header>
+
+  <nav class="navbar navbar-expand-lg w-75 mx-auto my-5 p-1 rounded-5 shadow-lg  bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container justify-content-between">
+      <a class="navbar-brand w-auto" href="#"><img src="images/logo-sm.png" class="w-15 m-1" alt="Game Reviews Logo">GAME REVIEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-category="MMORPG" href="#">MMORPG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="Shooter">Shooter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="Sailing">Sailing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="PERMADEATH">PERMADEATH</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="SUPERHERO">SUPERHERO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-category="PIXEL">PIXEL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container games">
+    <div class="row gy-4 justify-content-center"></div>
+  </div>
+
+  <div class="load">
+    <div class="loader d-none"></div>
+  </div>
+
+  <div class="my-modal bg-dark d-none py-3">
+    <i class="fa-solid fa-xmark bg-light rounded-circle text-dark" id="close" aria-label="Close modal"></i>
+    <h3 class="text-capitalize p-3 m-5">Game Details</h3>
+    <div class="container">
+      <div class="row justify-content-center gy-1">
+        <div class="col-lg-6 col-12">
+          <img src="images/istockphoto-809971888-2048x2048.jpg" class="w-75" alt="Game Image">
+        </div>
+        <div class="col-lg-6 col-12">
+          <h4></h4>
+          <div class="p-2">Platform: <span class="badge btn rounded-pill text-bg-info" id="platform"></span></div>
+          <div class="p-2">Status: <span class="badge rounded-pill text-bg-info" id="status"></span></div>
+          <p id="game-description"></p>
+          <a href="#" id="gameurl"><button class="btn btn-outline-warning">Show Game</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

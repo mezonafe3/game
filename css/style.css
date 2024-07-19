@@ -1,0 +1,91 @@
+.card-footer {
+  padding: 12px 10px ;
+  color: black;
+  border-top: 2px solid black;
+}
+
+header{
+  background-image: url(../images/istockphoto-815712236-2048x2048.jpg);
+  height: 30vh;
+}
+.navbar{
+  background-color: #3A497B !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+   color: #09c !important;
+   transition: color 0.5s;
+}
+.w-15{
+  width: 15%;
+}
+.card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+
+.my-modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  color: white;
+  overflow-y: auto;
+}
+p{
+  color: #939597;
+}
+
+.fa-xmark{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #fbff00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  .load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+ .games .col-12 {
+    width: auto; 
+}
+
+.games.row > * {
+    width: auto; 
+
+}
